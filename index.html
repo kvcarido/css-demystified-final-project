@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Serif:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="page-home">
+    <!-- primary header -->
+    <header class="primary-header">
+        <div class="primary-header__inner">
+          <a href="index.html" aria-label="acme home page"
+            ><img src="img/logo.svg" alt="" class="logo"
+          /></a>
+          <nav class="primary-nav">
+            <ul class="primary-nav__list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <!-- intro -->
+    <section class="intro text-serif">
+      <div class="container flow-content">
+        <h1 class="page-title">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </h1>
+        <p class="page-intro flow-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          accusantium, enim quisquam excepturi temporibus consequuntur hic.
+        </p>
+        <a href="#newsletter" class="btn">Connect</a>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about text-500 text-serif">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="flow-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum,
+            ad reprehenderit minima praesentium saepe qui corporis veniam fugit
+            deleniti quaerat odio est?
+          </p>
+          <p class="xl-space">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia,
+            eligendi?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog -->
+    <section class="blog bg-primary-300">
+      <div class="container">
+        <h2 class="section-title">Blog</h2>
+        <p class="section-subtitle text-serif">Latest thoughts, news, and ideas</p>
+        <div class="blog__cards flex xl-space">
+          <article class="card-preview flow-content">
+            <img src="img/blog-1.jpg" alt="" />
+            <a href="article.html">
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+            </a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+              maiores porro minima natus molestiae? Eligendi!
+            </p>
+            <div class="info">
+              <time datetime="2020-10-08">Oct 8</time>
+              <p class="blog-footer">8 min read</p>
+            </div>
+          </article>
+
+              <article class="card-preview flow-content">
+                <img src="img/blog-2.jpg" alt="" />
+                <a href="article.html">
+                  <h3>Lorem, ipsum dolor.</h3>
+                </a>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto numquam cupiditate voluptatibus. Libero!
+                </p>
+                <div class="info">
+                  <time datetime="2020-10-08">Oct 8</time>
+                  <p class="blog-footer">8 min read</p>
+                </div>
+              </article>
+
+          <article class="card-preview flow-content">
+            <img src="img/blog-3.jpg" alt="" />
+            <a href="article.html">
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia?</h3>
+            </a>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+              quas quis iure laboriosam dolores animi asperiores porro!
+            </p>
+            <div class="info">
+              <time datetime="2020-10-08">Oct 8</time>
+              <p class="blog-footer">8 min read</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section class="cta">
+      <div class="container">
+        <h2 class="section-title">Inbox</h2>
+        <p class="section-subtitle">Knowledge Letters</p>
+
+        <img class="xl-space" src="img/newsletter.jpg" alt="" />
+
+        <form action="" class="newsletter" method="POST" id="newsletter">
+            <div class="newsletter-column">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="fname"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="newsletter-column">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="example@domain.com"
+              />
+            </div>
+            <button class="btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="primary-footer">
+      <div class="container">
+        <div class="footer-columns flex">
+          <!-- logo -->
+            <a href="index.html" aria-label="acme home page"
+              ><img src="img/logo.svg" alt="" class="logo"
+            /></a>
+
+          <div class="footer-column">
+            <!-- map -->
+            <dl class="flow-content">
+              <dt class="text-serif">Map</dt>
+              <dd><a href="#">Blog</a></dd>
+              <dd><a href="#">Privacy</a></dd>
+            </dl>
+
+            <!-- resources -->
+            <dl class="flow-content">
+              <dt class="text-serif">Resources</dt>
+              <dd><a href="#">Courses</a></dd>
+              <dd><a href="#">Hacks</a></dd>
+              <dd><a href="#">Free stuff</a></dd>
+            </dl>
+          </div>
+        </div>
+        <div class="footer-copyright text-serif flex">
+          <p>© 2020 acme. All rights reserved</p>
+          <ul class="footer-social">
+            <li><a href="#">Yt</a></li>
+            <li><a href="#">Tw</a></li>
+            <li><a href="#"">Fb</a></li>
+            <li><a href="#">Li</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
