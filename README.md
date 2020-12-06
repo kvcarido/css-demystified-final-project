@@ -17,6 +17,10 @@ The styling is of this project is currently only supported in **Firefox** or **C
 [www.cssdemystified.com](https://cssdemystified.com/)
 
 ### 🚧 To Do + Stretch Goals
+<<<<<<< HEAD
 
 - [ ] Make compatible with Safari – utilize `margin` at media queries instead of `gap`
+=======
+- [ ] Make compatible with Safari – utilize `margin` at media queries instead of `gap` 
+>>>>>>> 4c4e9278512c5a7e5a374de304f48481624ea8fb
 - [ ] Implement scroll effects for anchor links
