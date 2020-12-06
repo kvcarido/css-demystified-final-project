@@ -121,16 +121,20 @@ body {
 .flex {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
 }
 
 .flex > * {
   flex-basis: 100%;
+  margin-top: 2.5rem;
 }
 
 @media (min-width: 40rem) {
   .flex {
     flex-direction: row;
+  }
+
+  .flex > * {
+    margin-left: 2.5rem;
   }
 }
 
@@ -330,8 +334,8 @@ footer {
     padding: 0;
   }
 
-  .primary-nav ul {
-    gap: 2rem;
+  .primary-nav li {
+    margin-left: 2rem;
   }
 
   .primary-nav a {
@@ -357,7 +361,10 @@ footer {
   .categories {
     margin: 0;
     display: flex;
-    gap: 2rem;
+  }
+
+  .categories li {
+    margin-left: 2rem;
   }
 
   .categories button {
@@ -379,10 +386,13 @@ footer {
 
 .card-preview .info {
   display: flex;
-  gap: 2rem;
   font-weight: var(--fw-400);
   font-size: var(--fs-200);
   color: var(--clr-neutral-400);
+}
+
+.info p {
+  margin-left: 2rem;
 }
 
 .card-preview img {
@@ -395,10 +405,10 @@ footer {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
 }
 
-.cta form > div {
+.cta form > div,
+.cta form > button {
   flex-grow: 1;
   flex-basis: 100%;
 }
@@ -434,8 +444,15 @@ footer {
     flex-direction: row;
   }
 
+  .cta form div:not(:first-child) {
+    margin-left: 2rem;
+  }
+
   .cta button {
+    text-align: right;
     align-self: center;
+    margin-top: 0;
+    margin-left: 0;
   }
 }
 
@@ -458,13 +475,19 @@ footer {
 }
 
 .footer-copyright {
+  display: flex;
   font-size: 0.9375rem;
   margin: 2rem 0;
+  justify-content: space-between;
 }
 
 .footer-social {
   display: flex;
-  gap: 2rem;
+}
+
+.footer-social li {
+  margin-left: 2rem;
+  align-self: center;
 }
 
 .footer-social a {
