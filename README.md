@@ -2,10 +2,6 @@
 
 Final project styling a 3-page website, utilizing concepts taught in CSS Demystified
 
-## 🚨 Disclaimer
-
-The styling is of this project is currently only supported in **Firefox** or **Chrome** and is best viewed in either one of those browsers
-
 ## 🔎 Concepts Learned
 
 - Understand overlooked fundamentals of CSS and why they matter
@@ -16,11 +12,7 @@ The styling is of this project is currently only supported in **Firefox** or **C
 
 [www.cssdemystified.com](https://cssdemystified.com/)
 
-### 🚧 To Do + Stretch Goals
-<<<<<<< HEAD
+## 🚧 To Do + Stretch Goals
 
-- [ ] Make compatible with Safari – utilize `margin` at media queries instead of `gap`
-=======
-- [ ] Make compatible with Safari – utilize `margin` at media queries instead of `gap` 
->>>>>>> 4c4e9278512c5a7e5a374de304f48481624ea8fb
+- [x] Make compatible with Safari – utilize `margin` at media queries instead of `gap`
 - [ ] Implement scroll effects for anchor links
